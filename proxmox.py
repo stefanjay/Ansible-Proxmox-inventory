@@ -91,7 +91,9 @@ class ProxmoxVersion(dict):
 
 class ProxmoxPool(dict):
     def get_members_name(self):
-        return [member['name'] for member in self['members'] if member['template'] != 1]
+        print ""
+        # proxmox pool fix # cli only!
+        #return [member['name'] for member in self['members'] if member['template'] != 1]
 
 
 class ProxmoxAPI(object):
